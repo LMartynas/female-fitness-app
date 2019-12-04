@@ -30,6 +30,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        activity_register_tv_menu.setOnClickListener {
+            Log.d("MainActivity", "Redirect to menu")
+
+            val intent = Intent(this, MenuActivity::class.java)
+            startActivity(intent)
+        }
+
         FirebaseAuth.getInstance()
     }
 }

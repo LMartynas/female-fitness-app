@@ -2,15 +2,13 @@ package com.example.fitnessapp
 
 import android.os.Bundle
 import android.os.PersistableBundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 
-class LoginActivity: AppCompatActivity() {
+class TrackMenstrualCycleActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
-
+        setContentView(R.layout.activity_track_menstrual_cycle)
 
     }
 }

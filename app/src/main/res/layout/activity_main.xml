@@ -52,19 +52,6 @@
         app:layout_constraintStart_toStartOf="@+id/activity_register_em_email"
         app:layout_constraintTop_toBottomOf="@+id/activity_register_em_email" />
 
-    <TextView
-        android:id="@+id/activity_register_tv_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="...or Login"
-        android:textColor="@android:color/white"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/activity_register_btn_register"
-        app:layout_constraintStart_toStartOf="@+id/activity_register_btn_register"
-        app:layout_constraintTop_toBottomOf="@+id/activity_register_btn_register" />
-
     <EditText
         android:id="@+id/activity_register_em_email"
         android:layout_width="0dp"
@@ -79,5 +66,31 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/activity_register_et_password"
         app:layout_constraintTop_toBottomOf="@+id/activity_register_et_password" />
+
+    <TextView
+        android:id="@+id/activity_register_tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="...or Login"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/activity_register_btn_register"
+        app:layout_constraintStart_toStartOf="@+id/activity_register_btn_register"
+        app:layout_constraintTop_toBottomOf="@+id/activity_register_btn_register" />
+
+    <TextView
+        android:id="@+id/activity_register_tv_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Main Menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_register_tv_login" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

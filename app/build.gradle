@@ -9,7 +9,7 @@ android {
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.example.fitnessapp"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -34,8 +34,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.google.firebase:firebase-analytics:17.2.0'
     implementation 'com.google.firebase:firebase-auth:19.2.0'
-    //implementation 'com.github.LMartynas:Custom-Calendar-View:v1.1'
-//   implementation 'com.github.npanigrahy:Custom-Calendar-View:v1.0'
+    implementation 'com.github.tizisdeepan:eventscalendar:1.6.1'
 }
 
 apply plugin: 'com.google.gms.google-services'

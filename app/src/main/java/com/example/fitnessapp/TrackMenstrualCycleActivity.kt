@@ -18,15 +18,15 @@ import java.util.*
 class TrackMenstrualCycleActivity: AppCompatActivity(), EventsCalendar.Callback {
 
     override fun onDayLongPressed(selectedDate: Calendar?) {
-        Log.e("LONG CLICKED", EventsCalendarUtil.getDateString(selectedDate, EventsCalendarUtil.DD_MM_YYYY))
+        Log.d("LONG CLICKED", EventsCalendarUtil.getDateString(selectedDate, EventsCalendarUtil.DD_MM_YYYY))
     }
 
     override fun onMonthChanged(monthStartDate: Calendar?) {
-        Log.e("MON", "CHANGED")
+        Log.d("MON", "CHANGED")
     }
 
     override fun onDaySelected(selectedDate: Calendar?) {
-        Log.e("CLICKED", EventsCalendarUtil.getDateString(selectedDate, EventsCalendarUtil.DD_MM_YYYY))
+        Log.d("CLICKED", EventsCalendarUtil.getDateString(selectedDate, EventsCalendarUtil.DD_MM_YYYY))
 //        selected.text = getDateString(selectedDate?.timeInMillis)
     }
 

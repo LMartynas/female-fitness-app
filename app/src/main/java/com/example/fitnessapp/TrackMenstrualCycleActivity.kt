@@ -1,5 +1,6 @@
 package com.example.fitnessapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.util.Log
@@ -27,14 +28,7 @@ class TrackMenstrualCycleActivity: AppCompatActivity(), EventsCalendar.Callback 
 
     override fun onDaySelected(selectedDate: Calendar?) {
         Log.d("CLICKED", EventsCalendarUtil.getDateString(selectedDate, EventsCalendarUtil.DD_MM_YYYY))
-//        selected.text = getDateString(selectedDate?.timeInMillis)
     }
-
-//    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-//                              savedInstanceState: Bundle?): View? {
-//        // Inflate the layout for this fragment
-//        return inflater.inflate(R.layout.activity_track_menstrual_cycle, container, false)
-//    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -78,12 +72,22 @@ class TrackMenstrualCycleActivity: AppCompatActivity(), EventsCalendar.Callback 
 //            val dates = eventsCalendar.getDatesFromSelectedRange()
 //            Log.e("SELECTED SIZE", dates.size.toString())
 //        }
-//
-//        selected.typeface = FontsManager.getTypeface(FontsManager.OPENSANS_SEMIBOLD, this)
 
+//        selected.typeface = FontsManager.getTypeface(FontsManager.OPENSANS_SEMIBOLD, this)
 
         val dc = Calendar.getInstance()
         dc.add(Calendar.DAY_OF_MONTH, 2)
+
+        activity_track_menstrual_cycle_button_save.setOnClickListener {
+            Log.d("TrackMCycleActivity", "Save btn has been clicked")
+
+            val selectedDates = eventsCalendar.getDatesFromSelectedRange();
+            val intent = Intent(this, VIewTrainingAdviceActivity::class.java)
+
+            // Can't pass Calendar object to intent, convert to milliseconds instead
+            intent.putExtra("SELECTED_DATES_LAST", selectedDates.last().timeInMillis)
+            startActivity(intent)
+        }
     }
 
     private fun getDateString(time: Long?): String {

@@ -7,6 +7,48 @@
     android:background="@color/colorAccent"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Tip 1:"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/activity_vtadvice_spinner_sport"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/activity_vtadvice_spinner_sport"
+        app:layout_constraintTop_toBottomOf="@+id/activity_vtadvice_spinner_sport" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:text="Tip 2:"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/activity_vtadvice_spinner_sport"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/activity_vtadvice_spinner_sport"
+        app:layout_constraintTop_toBottomOf="@+id/activity_vtadvice_spinner_sport" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
+        android:text="Tip 3:"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/activity_vtadvice_spinner_sport"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/activity_vtadvice_spinner_sport"
+        app:layout_constraintTop_toBottomOf="@+id/activity_vtadvice_spinner_sport" />
+
     <Spinner
         android:id="@+id/activity_vtadvice_spinner_sport"
         android:layout_width="0dp"
@@ -23,7 +65,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"

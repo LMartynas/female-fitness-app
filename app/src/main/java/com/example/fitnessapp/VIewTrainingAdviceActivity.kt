@@ -6,7 +6,9 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
+import com.events.calendar.utils.EventsCalendarUtil
 import kotlinx.android.synthetic.main.activity_view_training_advice.*
+import java.util.*
 
 class VIewTrainingAdviceActivity: AppCompatActivity() {
 
@@ -36,5 +38,14 @@ class VIewTrainingAdviceActivity: AppCompatActivity() {
                 // Another interface callback
             }
         }
+
+        val selectedDate = intent.getLongExtra("SELECTED_DATES_LAST", 0)
+        val calendar = Calendar.getInstance()
+        calendar.setTimeInMillis(selectedDate)
+        val lastSelectedDay = EventsCalendarUtil.getDateString(calendar, EventsCalendarUtil.DD_MM_YYYY)
+
+
+
+
     }
 }

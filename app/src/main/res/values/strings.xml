@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">FitnessApp</string>
-    
+    <string name="week_mode">Week mode</string>
+
     <string-array name="strava_sports_list">
         <item>Running</item>
         <item>Cycling</item>
